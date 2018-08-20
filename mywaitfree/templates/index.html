@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'mywaitfree/style.css' %}" />
+    <meta charset="UTF-8">
+    <div class="form-style-6">
+    <title>Line Here</title>
+</head>
+<body>
+
+<form method="post" action="/getdata/">
+    <table>
+    <label for="First Name">Your name: </label>
+    <input id="First Name" type="text" name="Name" value="{{ current_name }}">
+    
+    <label for="Phone #">Group Size: </label>
+    <input id="Phone #" type="text" name="Phone #" value="{{ current_name }}">
+    
+    <label for="Phone #">Phone numbers: </label>
+    <input id="Phone #" type="text" name="group #" value="{{ current_name }}">
+    
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
